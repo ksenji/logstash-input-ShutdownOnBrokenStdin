@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
-  s.name = 'logstash-input-shutdown-on-broken-stdin'
-  s.version         = '2.0.4'
+  s.name = 'logstash-input-shutdown_on_broken_stdin'
+  s.version = '2.0.4'
   s.licenses = ['Apache License (2.0)']
   s.summary = "This is an extension of Stdin input plugin. This plugin exits Logstash on broken Stdin."
   s.description = "If Logstash is launched as a sub-process, this plugin can be used to exit Logstash when the parent process exits. The parent process should launch the Logstash sub-process using Inherit on Stdin, this way when the parent process exits, the Stdin is broken which is detected by this plugin which exits Logstash"
